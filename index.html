@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusEats - Student Grocery Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <header class="navbar">
+            <div class="navbar-container">
+                <!-- Top Navbar -->
+                <div class="top-navbar">
+                    <!-- Logo -->
+                    <a href="/" class="logo">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="logo-text">Campus Cart</span>
+                    </a>
+                    
+                    <!-- Search Bar -->
+                    <div class="search-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="search" placeholder="Search for groceries..." class="search-input">
+                    </div>
+                    
+                    <!-- Right Nav Items -->
+                    <div class="nav-actions">
+                        <button class="icon-button wishlist-button">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="icon-button user-button">
+                            <i class="fas fa-user"></i>
+                        </button>
+                        <button class="cart-button">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge">3</span>
+                        </button>
+                        <button class="menu-button">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Category Navigation -->
+                <nav class="category-nav">
+                    <ul class="category-list">
+                        <li>
+                            <a href="#" class="category-item with-dropdown" id="all-categories-toggle">All Categories <i class="fas fa-chevron-down"></i></a>
+                            <ul class="category-dropdown" id="all-categories-dropdown">
+                                <li><a href="#" class="category-item">Essentials</a></li>
+                                <li><a href="Snacks\index.html" class="category-item">Snacks</a></li>
+                                <li><a href="beverages\index.html" class="category-item">Beverages</a></li>
+                                <li><a href="#" class="category-item">Frozen Foods</a></li>
+                                <li><a href="#" class="category-item">Fresh Produce</a></li>
+                                <li><a href="#" class="category-item">Dairy</a></li>
+                                <li><a href="#" class="category-item">Health & Wellness</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" class="student-deals-link">Student Deals</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Hero Banner -->
+            <section class="hero-section">
+                <div class="hero-banner">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Student Exclusive</h1>
+                        <p class="hero-text">Get 20% off on your first order with code STUDENT20</p>
+                        <button class="primary-button">Shop Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Products -->
+            <section class="product-section">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Products</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge discount">20% OFF</span>
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Instant Ramen Pack</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Instant Ramen Pack</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹399</span>
+                                <span class="old-price">₹639</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge bestseller">Best Seller</span>
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Energy Drink 6-Pack</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Energy Drink 6-Pack</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹719</span>
+                                <span class="old-price">₹959</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge student-pick">Student Pick</span>
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Protein Bars (12)</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Protein Bars (12)</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹799</span>
+                                <span class="old-price">₹1199</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Frozen Pizza</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Frozen Pizza</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹479</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge bogo">BOGO</span>
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Mac & Cheese</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Mac & Cheese</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹239</span>
+                                <span class="old-price">₹319</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Categories -->
+            <section class="category-section">
+                <h2 class="section-title">Shop by Category</h2>
+                
+                <div class="category-grid">
+                    <!-- Category 1 -->
+                    <a href="#" class="category-card">
+                        <div class="category-image">
+                            <div class="image-placeholder">Essentials</div>
+                        </div>
+                        <div class="category-name">Essentials</div>
+                    </a>
+
+                    <!-- Category 2 -->
+                    <a href="Snacks\index.html" class="category-card">
+                        <div class="category-image">
+                            <div class="image-placeholder">Snacks</div>
+                        </div>
+                        <div class="category-name">Snacks</div>
+                    </a>
+
+                    <!-- Category 3 -->
+                    <a href="beverages\index.html" class="category-card">
+                        <div class="category-image">
+                            <div class="image-placeholder">Beverages</div>
+                        </div>
+                        <div class="category-name">Beverages</div>
+                    </a>
+
+                    <!-- Category 4 -->
+                    <a href="#" class="category-card">
+                        <div class="category-image">
+                            <div class="image-placeholder">Frozen Foods</div>
+                        </div>
+                        <div class="category-name">Frozen Foods</div>
+                    </a>
+
+                    <!-- Category 5 -->
+                    <a href="#" class="category-card">
+                        <div class="category-image">
+                            <div class="image-placeholder">Fresh Produce</div>
+                        </div>
+                        <div class="category-name">Fresh Produce</div>
+                    </a>
+
+                    <!-- Category 6 -->
+                    <a href="#" class="category-card">
+                        <div class="category-image">
+                            <div class="image-placeholder">Dairy</div>
+                        </div>
+                        <div class="category-name">Dairy</div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Shops -->
+            <section class="shop-section">
+                <h2 class="section-title">Shop by Store</h2>
+                
+                <div class="shop-grid">
+                    <!-- Shop 1 -->
+                    <a href="#" class="shop-card">
+                        <div class="shop-image">
+                            <div class="image-placeholder">Kanhaz</div>
+                        </div>
+                        <div class="shop-name">Kanhaz</div>
+                        <button class="favorite-button">Most Favorites</button>
+                    </a>
+
+                    <!-- Shop 2 -->
+                    <a href="#" class="shop-card">
+                        <div class="shop-image">
+                            <div class="image-placeholder">Radhika Supermarket</div>
+                        </div>
+                        <div class="shop-name">Radhika Supermarket</div>
+                        <button class="favorite-button">Most Favorites</button>
+                    </a>
+
+                    <!-- Shop 3 -->
+                    <a href="#" class="shop-card">
+                        <div class="shop-image">
+                            <div class="image-placeholder">Old SC</div>
+                        </div>
+                        <div class="shop-name">Old SC</div>
+                        <button class="favorite-button">Most Favorites</button>
+                    </a>
+
+                    <!-- Shop 4 -->
+                    <a href="#" class="shop-card">
+                        <div class="shop-image">
+                            <div class="image-placeholder">Nescafe</div>
+                        </div>
+                        <div class="shop-name">Nescafe</div>
+                        <button class="favorite-button">Most Favorites</button>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Student Deals -->
+            <section class="product-section">
+                <div class="section-header">
+                    <h2 class="section-title">Student Deals</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Deal 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge discount">35% OFF</span>
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Microwave Meals Bundle</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Microwave Meals Bundle</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹1039</span>
+                                <span class="old-price">₹1599</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Deal 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge discount">40% OFF</span>
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Study Snack Box</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Study Snack Box</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹1199</span>
+                                <span class="old-price">₹1999</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Deal 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge discount">25% OFF</span>
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Coffee & Energy Pack</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Coffee & Energy Pack</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹1359</span>
+                                <span class="old-price">₹1839</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Deal 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge student-deal">Student Deal</span>
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Breakfast Essentials</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Breakfast Essentials</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹799</span>
+                                <span class="old-price">₹1279</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Deal 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge limited">Limited Time</span>
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Protein Shake Mix</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Protein Shake Mix</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹1519</span>
+                                <span class="old-price">₹1999</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Meals -->
+            <section class="product-section">
+                <div class="section-header">
+                    <h2 class="section-title">Quick Meals</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Meal 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Instant Noodle Bowl</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Instant Noodle Bowl</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹199</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Meal 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Microwavable Rice</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Microwavable Rice</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹319</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Meal 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge new">New</span>
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Frozen Burritos (4)</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Frozen Burritos (4)</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹559</span>
+                                <span class="old-price">₹719</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Meal 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Pasta & Sauce Kit</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Pasta & Sauce Kit</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹399</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Meal 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge deal">2 for ₹239</span>
+                            <button class="wishlist-icon">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <div class="image-placeholder">Soup Cup</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Soup Cup</h3>
+                            <div class="product-price">
+                                <span class="current-price">₹159</span>
+                            </div>
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>CampusEats</span>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">About</a>
+                        <a href="#" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Help</a>
+                        <a href="#" class="footer-link">Privacy</a>
+                        <a href="#" class="footer-link">Terms</a>
+                    </div>
+                    <div class="footer-copyright">
+                        © 2025 CampusEats. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('.menu-button');
+            const categoryNav = document.querySelector('.category-nav');
+            
+            menuButton.addEventListener('click', function() {
+                categoryNav.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
